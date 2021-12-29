@@ -31,8 +31,7 @@ const Production = () => {
                     <img
                       src={image.src}
                       alt={image.alt}
-                      width="180px"
-                      height="180px"
+                      width="300px"
                     />
                     <span>{image.title}</span>
                   </div>
