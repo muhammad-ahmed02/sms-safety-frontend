@@ -20,7 +20,7 @@ const Home = () => {
               <div className="home-text">
                 <div className="main-title">
                   <h1>Sheikh Muhammad Saeed & Sons</h1>
-                  <h3>SMS Safety</h3>
+                  <h3>SMS Safty</h3>
                 </div>
                 <div className="subtitle">
                   <h3>{hm.subtitle}</h3>
