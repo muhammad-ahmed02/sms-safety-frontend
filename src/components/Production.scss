@@ -44,12 +44,16 @@
 }
 
 .production-images {
-  width: 65%;
+  // width: 65%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
+}
+
+.width {
+  width: 65%;
 }
 
 .production-image {
@@ -59,7 +63,16 @@
   align-items: center;
 
   span {
-    color: purple;
+    font-size: 20px;
+    color: rgb(92, 5, 92);
+  }
+}
+
+.production-image:hover {
+  img {
+    box-shadow: rgba(0, 0, 0, 0.57);
+    -webkit-box-shadow: 0 5px 40px -10px rgba(0, 0, 0, 0.8);
+    transition: all 0.3s ease 0s;
   }
 }
 

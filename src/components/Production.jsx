@@ -25,19 +25,22 @@ const Production = () => {
               key={i}
               style={{ minHeight: height / 2 }}
             >
-              <div className="production-images">
+              <div className={`production-images ${prod.details && "width"}`}>
                 {prod.production_images.map((image, i) => (
                   <div className="production-image" key={i}>
                     <img
                       src={image.src}
                       alt={image.alt}
-                      width="300px"
+                      height="250px"
+                      width="250px"
                     />
                     <span>{image.title}</span>
                   </div>
                 ))}
               </div>
-              <div className="production-details">{parse(prod.details)}</div>
+              {prod.details && (
+                <div className="production-details">{parse(prod.details)}</div>
+              )}
             </div>
           ))}
         </div>

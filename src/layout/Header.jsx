@@ -19,7 +19,7 @@ const Header = () => {
                     <div className="logo">
                       {home.state.map((logo, i) => (
                         <Link to="/" key={i}>
-                          <img src={logo.logo} alt="Logo" width="120px" />
+                          <img src={logo.logo} alt="Logo" width="350px" />
                         </Link>
                       ))}
                     </div>

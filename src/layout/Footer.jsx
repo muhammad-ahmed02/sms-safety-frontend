@@ -2,7 +2,7 @@ const Footer = () => {
   return (
     <footer>
       <div className="main-footer">
-        <p>Copyright &copy; 2000 - 2021 SMS SAFTY</p>
+        <p>Copyright &copy; 2000 - 2021 SMS SAFETY</p>
         <span>
           Developed by{" "}
           <a
