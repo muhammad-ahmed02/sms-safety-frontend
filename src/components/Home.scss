@@ -31,6 +31,16 @@
   // margin: 10px;
 }
 
+.slider img {
+  background: #fff;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-blend-mode: multiply;
+  background-size: cover;
+  object-fit: contain;
+}
+
 @media (max-width: 400px) {
   .main-title {
     h1 {
