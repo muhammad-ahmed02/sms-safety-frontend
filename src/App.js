@@ -1,36 +1,23 @@
-import { Suspense } from "react";
-import { Route, Routes } from "react-router-dom";
+import React, { Suspense } from "react";
+import { Helmet } from "react-helmet";
+// Screens
+import Landing from "./screens/Landing.jsx";
+import Loading from "./screens/Loading.jsx"
 
-import "./App.scss";
-import Loading from "./components/Loading";
-import SiteDown from "./components/SiteDown";
-import useSite from "./hooks/site";
-import Layout from "./layout/Layout";
-import Home from "./components/Home";
-
-function App() {
-  const site = useSite();
+export default function App() {
   return (
-    <Layout>
-      <Suspense fallback={<Loading />}>
-        {site.hasLoaded ? (
-          <Routes>
-            {site.state.map((st, i) => (
-              <>
-                {st.status === "Down" ? (
-                  <Route exact path="/" element={<SiteDown />}></Route>
-                ) : (
-                  <Route exact path="/" element={<Home />}></Route>
-                )}
-              </>
-            ))}
-          </Routes>
-        ) : (
-          <Loading />
-        )}
+    <>
+      <Suspense fallback={<Loading /> }>
+        <Helmet>
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Khula:wght@400;600;800&display=swap"
+            rel="stylesheet"
+          />
+        </Helmet>
+        <Landing />
       </Suspense>
-    </Layout>
+    </>
   );
 }
-
-export default App;
