@@ -22,22 +22,57 @@ export default function Contact() {
             <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
               <Form>
                 <label className="font13">First name:</label>
-                <input type="text" id="fname" name="fname" className="font20 extraBold" />
+                <input type="text" id="fname" name="fname" className="font20" />
                 <label className="font13">Email:</label>
-                <input type="text" id="email" name="email" className="font20 extraBold" />
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  className="font20"
+                  required
+                />
                 <label className="font13">Subject:</label>
-                <input type="text" id="subject" name="subject" className="font20 extraBold" />
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  className="font20"
+                  required
+                />
                 <label className="font13">Message:</label>
-                <textarea rows="4" cols="50" type="text" id="message" name="message" className="font20 extraBold" />
+                <textarea
+                  rows="4"
+                  cols="50"
+                  type="text"
+                  id="message"
+                  name="message"
+                  className="font20"
+                  required
+                />
               </Form>
               <SumbitWrapper className="flex">
-                <ButtonInput type="submit" value="Send Message" className="pointer animate radius8" style={{ maxWidth: "220px" }} />
+                <a href="mailto:smsleather@gmail.com">
+                  <ButtonInput
+                    type="submit"
+                    value="Send Message"
+                    className="pointer animate radius8"
+                    style={{ maxWidth: "220px" }}
+                  />
+                </a>
               </SumbitWrapper>
             </div>
             <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 flex">
-              <div style={{ width: "50%" }} className="flexNullCenter flexColumn">
+              <div
+                style={{ width: "50%" }}
+                className="flexNullCenter flexColumn"
+              >
                 <ContactImgBox>
-                  <img src={ContactImg1} alt="office" width="200px" className="radius6" />
+                  <img
+                    src={ContactImg1}
+                    alt="office"
+                    width="200px"
+                    className="radius6"
+                  />
                 </ContactImgBox>
                 <ContactImgBox>
                   <img src={ContactImg2} alt="office" className="radius6" />
@@ -45,7 +80,12 @@ export default function Contact() {
               </div>
               <div style={{ width: "50%" }}>
                 <div style={{ marginTop: "100px" }}>
-                  <img src={ContactImg3} alt="office" height="330px" className="radius6" />
+                  <img
+                    src={ContactImg3}
+                    alt="office"
+                    height="330px"
+                    className="radius6"
+                  />
                 </div>
               </div>
             </div>
@@ -102,8 +142,8 @@ const ButtonInput = styled.input`
   }
 `;
 const ContactImgBox = styled.div`
-  max-width: 180px; 
-  align-self: flex-end; 
+  max-width: 180px;
+  align-self: flex-end;
   margin: 10px 30px 10px 0;
 `;
 const SumbitWrapper = styled.div`
@@ -112,12 +152,3 @@ const SumbitWrapper = styled.div`
     margin-bottom: 50px;
   }
 `;
-
-
-
-
-
-
-
-
-
