@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from "react-scroll";
+// import { Link } from "react-scroll";
 // Components
 import ProjectBox from "../Elements/ProjectBox";
-import FullButton from "../Buttons/FullButton";
+// import FullButton from "../Buttons/FullButton";
 // Assets
 import ProjectImg1 from "../../assets/img/projects/1.png";
 import ProjectImg2 from "../../assets/img/projects/2.png";
@@ -21,65 +21,65 @@ import AddImage2 from "../../assets/img/add/add2.png";
 
 const products = [
   {
-    name1: "Awesome Product",
+    name1: "Leather Impact Glove",
     details1:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.",
     link1: ProjectImg1,
 
-    name2: "Awesome Product",
+    name2: "Leather Impact Glove",
     details2:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.",
     link2: ProjectImg2,
 
-    name3: "Awesome Product",
+    name3: "Leather Impact Glove",
     details3:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.",
     link3: ProjectImg3,
   },
   {
-    name1: "Awesome Product",
+    name1: "Fabric + Leather Impact Glove",
     details1:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.",
     link1: ProjectImg4,
 
-    name2: "Awesome Product",
+    name2: "Fabric + Leather Impact Glove",
     details2:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.",
     link2: ProjectImg5,
 
-    name3: "Awesome Product",
+    name3: "Leather Impact Glove",
     details3:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.",
     link3: ProjectImg6,
   },
   {
-    name1: "Awesome Product",
+    name1: "Leather Impact Glove",
     details1:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.",
     link1: ProjectImg7,
 
-    name2: "Awesome Product",
+    name2: "Custom Welding Glove",
     details2:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.",
     link2: ProjectImg8,
 
-    name3: "Awesome Product",
+    name3: "Fabric + Leather Impact Glove",
     details3:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.",
     link3: ProjectImg9,
   },
   {
-    name1: "Awesome Product",
+    name1: "Winter isulation safety gloves",
     details1:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.",
     link1: ProjectImg10,
 
-    name2: "Awesome Product",
+    name2: "Custom welding glove",
     details2:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.",
     link2: ProjectImg11,
 
-    name3: "Awesome Product",
+    name3: "Winter isulated safety glove",
     details3:
       "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.",
     link3: ProjectImg12,
@@ -89,15 +89,16 @@ const products = [
 export default function Projects() {
   return (
     <Wrapper id="projects">
-      <div className="whiteBg">
+      <div className="yellowBg">
         <div className="container">
           <HeaderInfo>
-            <h1 className="font40 extraBold">Our Awesome Projects</h1>
-            <p className="font13">
-              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-              nonumy eirmod tempor invidunt ut
+            <h1 className="font40 extraBold">Why choose us?</h1>
+            <p className="font16">
+              We are manufacturer of leather and we are manufacturing leather
+              gloves in our own tannery and factories in Karachi and Sialkot.
               <br />
-              labore et dolore magna aliquyam erat, sed diam voluptua.
+              We are also importing from Europe the raw materials that are being
+              used in manufacturing of gloves.
             </p>
           </HeaderInfo>
           {products.map((product, i) => (
@@ -131,7 +132,7 @@ export default function Projects() {
           </div>
         </div>
       </div>
-      <div className="lightBg">
+      <div className="yellowBg">
         <div className="container">
           <Advertising className="flexSpaceCenter">
             <AddLeft>
@@ -148,12 +149,12 @@ export default function Projects() {
             </AddLeft>
             <AddRight>
               <h4 className="font15 semiBold">A few words about company</h4>
-              <h2 className="font40 extraBold">A Study of Creativity</h2>
-              <p className="font12">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                diam nonumy eirmod tempor invidunt ut labore et dolore magna
-                aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                justo duo dolores et ea rebum.
+              <h2 className="font40 extraBold">Try before you buy</h2>
+              <p className="font15">
+                We are regularly visiting Dubai and Germany dussaldof exhibition
+                to meet our customers and friends. Our team is frequently
+                visiting Europe. If you want to meet us than contact us so that
+                we can schedule our meetup in our next visit.
               </p>
               <ButtonsRow
                 className="flexNullCenter"
@@ -162,7 +163,7 @@ export default function Projects() {
                 {/* <div style={{ width: "190px" }}>
                   <FullButton title="Get Started" />
                 </div> */}
-                <div style={{ width: "200px" }}>
+                {/* <div style={{ width: "200px" }}>
                   <Link
                     activeClass="active"
                     style={{ padding: "10px 0px" }}
@@ -173,7 +174,7 @@ export default function Projects() {
                   >
                     <FullButton title="Contact Us" border />
                   </Link>
-                </div>
+                </div> */}
               </ButtonsRow>
             </AddRight>
           </Advertising>
@@ -238,7 +239,7 @@ const AddRight = styled.div`
 const AddLeftInner = styled.div`
   width: 100%;
   position: absolute;
-  top: -300px;
+  top: -150px;
   left: 0;
   @media (max-width: 1190px) {
     top: -250px;

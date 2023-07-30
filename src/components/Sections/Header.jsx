@@ -5,22 +5,24 @@ import styled from "styled-components";
 // Assets
 import HeaderImage from "../../assets/img/header-img.png";
 import QuotesIcon from "../../assets/svg/Quotes";
-import Dots from "../../assets/svg/Dots";
+// import Dots from "../../assets/svg/Dots";
 
 export default function Header() {
   return (
-    <Wrapper id="home" className="container flexSpaceCenter">
+    <Wrapper id="home" className="container flexSpaceCenter yellowBg">
       <LeftSide className="flexCenter">
         <div>
           <h1 className="extraBold font60">
-            We are Leather Manufacturers in Pakistan.
+            We are Safety Gloves Manufacturer in Pakistan.
           </h1>
-          <HeaderP className="font13 semiBold">
-            Our diverse range of gloves caters to various needs and preferences,
-            from elegant and stylish gloves for formal occasions to robust and
-            weather-resistant gloves for outdoor activities. Whether you're
-            seeking gloves for fashion, sports, or industrial purposes, our
-            plant offers a wide selection to meet your requirements.
+          <HeaderP className="font16 semiBold">
+            We are manufacturing in Karachi and Sialkot, wide range of safety
+            gloves including working gloves, welding gloves, tick welding,
+            impact gloves, kong gloves, driving gloves, aluminize gloves and
+            complete suit, etc... Almost all kind of gloves in fabric and
+            leather. We are one of company who are supplying leather materials
+            like cow split leather and goat, sheep, grain to other exporters and
+            using ourself too.
           </HeaderP>
           {/* <BtnWrapper>
             <FullButton title="Get Started" />
@@ -42,23 +44,21 @@ export default function Header() {
             </QuotesWrapper>
             <div>
               <p className="font15 whiteColor">
-                <em>
-                  Safety is not an accident but a choice we make.
-                </em>
+                <em>Hand safety is better than cure.</em>
               </p>
-              <p
+              {/* <p
                 className="font13 orangeColor textRight"
                 style={{ marginTop: "10px" }}
               >
                 ~ Unknown
-              </p>
+              </p> */}
             </div>
           </QuoteWrapper>
-          <DotsWrapper>
+          {/* <DotsWrapper>
             <Dots />
-          </DotsWrapper>
+          </DotsWrapper> */}
         </ImageWrapper>
-        <GreyDiv className="lightBg"></GreyDiv>
+        {/* <GreyDiv className="lightBg"></GreyDiv> */}
       </RightSide>
     </Wrapper>
   );
@@ -110,17 +110,17 @@ const HeaderP = styled.div`
 //     margin: 0 auto;
 //   }
 // `;
-const GreyDiv = styled.div`
-  width: 30%;
-  height: 700px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 0;
-  @media (max-width: 960px) {
-    display: none;
-  }
-`;
+// const GreyDiv = styled.div`
+//   width: 30%;
+//   height: 700px;
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   z-index: 0;
+//   @media (max-width: 960px) {
+//     display: none;
+//   }
+// `;
 const ImageWrapper = styled.div`
   display: flex;
   justify-content: flex-end;
@@ -156,15 +156,15 @@ const QuotesWrapper = styled.div`
   left: -20px;
   top: -10px;
 `;
-const DotsWrapper = styled.div`
-  position: absolute;
-  right: -100px;
-  bottom: 100px;
-  z-index: 2;
-  @media (max-width: 960px) {
-    right: 100px;
-  }
-  @media (max-width: 560px) {
-    display: none;
-  }
-`;
+// const DotsWrapper = styled.div`
+//   position: absolute;
+//   right: -100px;
+//   bottom: 100px;
+//   z-index: 2;
+//   @media (max-width: 960px) {
+//     right: 100px;
+//   }
+//   @media (max-width: 560px) {
+//     display: none;
+//   }
+// `;

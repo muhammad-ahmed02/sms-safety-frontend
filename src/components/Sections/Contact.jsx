@@ -8,7 +8,7 @@ import ContactImg3 from "../../assets/img/contact-3.png";
 export default function Contact() {
   return (
     <Wrapper id="contact">
-      <div className="lightBg">
+      <div className="yellowBg">
         <div className="container">
           <HeaderInfo>
             <h1 className="font40 extraBold">Let's get in touch</h1>
@@ -75,7 +75,7 @@ export default function Contact() {
                   />
                 </ContactImgBox>
                 <ContactImgBox>
-                  <img src={ContactImg2} alt="office" className="radius6" />
+                  <img src={ContactImg2} alt="office" className="radius6" width="180px" />
                 </ContactImgBox>
               </div>
               <div style={{ width: "50%" }}>
