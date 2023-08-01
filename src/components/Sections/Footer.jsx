@@ -23,7 +23,7 @@ export default function Contact() {
               smooth={true}
               offset={-80}
             >
-              <LogoImg width="auto" height="20px" />
+              <LogoImg width="auto" height="100px" />
             </Link>
             <StyleP className="whiteColor font13">
               © {getCurrentYear()} -{" "}

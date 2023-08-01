@@ -24,10 +24,10 @@ export default function TopNavbar() {
     <>
       <Sidebar sidebarOpen={sidebarOpen} toggleSidebar={toggleSidebar} />
       {sidebarOpen && <Backdrop toggleSidebar={toggleSidebar} />}
-      <Wrapper className="flexCenter animate orangeBg" style={y > 100 ? { height: "60px" } : { height: "80px" }}>
+      <Wrapper className="flexCenter animate orangeBg" style={y > 100 ? { height: "60px" } : { height: "120px" }}>
         <NavInner className="container flexSpaceCenter">
           <Link className="pointer flexNullCenter" to="home" smooth={true}>
-            <LogoIcon width="auto" height="40px" />
+            <LogoIcon width="auto" height={y > 100 ? "60px" : "100px"} className="animate" />
             
           </Link>
           <BurderWrapper className="pointer" onClick={() => toggleSidebar(!sidebarOpen)}>
