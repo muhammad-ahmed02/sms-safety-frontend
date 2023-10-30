@@ -4,87 +4,8 @@ import styled from "styled-components";
 // Components
 import ProjectBox from "../Elements/ProjectBox";
 // import FullButton from "../Buttons/FullButton";
-// Assets
-import ProjectImg1 from "../../assets/img/projects/1.png";
-import ProjectImg2 from "../../assets/img/projects/2.png";
-import ProjectImg3 from "../../assets/img/projects/3.png";
-import ProjectImg4 from "../../assets/img/projects/4.png";
-import ProjectImg5 from "../../assets/img/projects/5.png";
-import ProjectImg6 from "../../assets/img/projects/6.png";
-import ProjectImg7 from "../../assets/img/projects/7.png";
-import ProjectImg8 from "../../assets/img/projects/8.png";
-import ProjectImg9 from "../../assets/img/projects/9.png";
-import ProjectImg10 from "../../assets/img/projects/10.png";
-import ProjectImg11 from "../../assets/img/projects/11.png";
-import ProjectImg12 from "../../assets/img/projects/12.png";
+import { products } from "../../Datalist";
 import AddImage2 from "../../assets/img/add/add2.png";
-
-const products = [
-  {
-    name1: "Leather Impact Glove",
-    details1:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.",
-    link1: ProjectImg1,
-
-    name2: "Leather Impact Glove",
-    details2:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.",
-    link2: ProjectImg2,
-
-    name3: "Leather Impact Glove",
-    details3:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.",
-    link3: ProjectImg3,
-  },
-  {
-    name1: "Fabric + Leather Impact Glove",
-    details1:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.",
-    link1: ProjectImg4,
-
-    name2: "Fabric + Leather Impact Glove",
-    details2:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.",
-    link2: ProjectImg5,
-
-    name3: "Leather Impact Glove",
-    details3:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.",
-    link3: ProjectImg6,
-  },
-  {
-    name1: "Leather Impact Glove",
-    details1:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.",
-    link1: ProjectImg7,
-
-    name2: "Custom Welding Glove",
-    details2:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.",
-    link2: ProjectImg8,
-
-    name3: "Fabric + Leather Impact Glove",
-    details3:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.",
-    link3: ProjectImg9,
-  },
-  {
-    name1: "Winter isulation safety gloves",
-    details1:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.",
-    link1: ProjectImg10,
-
-    name2: "Custom welding glove",
-    details2:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.",
-    link2: ProjectImg11,
-
-    name3: "Winter isulated safety glove",
-    details3:
-      "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.",
-    link3: ProjectImg12,
-  },
-];
 
 export default function Projects() {
   return (
