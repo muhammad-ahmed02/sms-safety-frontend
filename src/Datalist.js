@@ -68,8 +68,9 @@ export const products = [
     details3: "Silicon Printing Super Grippy.",
   },
   {
-    name1: "Winter Isulation Safety Gloves",
+    name1: "Impect Gloves",
     link1: ProjectImg13,
+    details1: "Eva Gell Padded cutt Cutt A5",
 
     name2: "Machanic Gloves",
     link2: ProjectImg14,
